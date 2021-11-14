@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div id = "container" img src="images/bookShelf.jpeg">
+            <div id = "titleCard"> My Library</div>
+            <div id="main" class = "all-book-cards"></div>
+
+            <button class="open-button" onclick="openForm()">Add Book</button>
+            <div class="form-popup" id="myForm">
+                <form action="index.html" class="form-container">
+                    <h1>Add Book</h1>
+
+                    <label for="bookTitle"><b>Title:</b></label>
+                    <input id="bookTitle" type="text" placeholder="Enter Title" name="bookTitle" required>
+
+                    <label for="bookAuthor"><b>Author:</b></label>
+                    <input id="bookAuthor" type="text" placeholder="Enter Author" name="bookAuthor" required>
+
+                    <label for="bookPages"><b>Pages:</b></label>
+                    <input id="bookPages" type="text" placeholder="Enter Pages" name="bookPages" required>
+
+                    <button id="submit" type="button" class="btn">Add</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+
+        </div>
+        <script src ="script.js"></script>
+    </body>
+</html>
